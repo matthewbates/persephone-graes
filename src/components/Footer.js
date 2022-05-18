@@ -14,7 +14,7 @@ export default function Footer() {
         <InstagramIcon /> <FacebookIcon />
       </div>
       <p>
-        ©{today.getFullYear()}:<i> {name}</i>
+        © {today.getFullYear()}:<i> {name}</i>
       </p>
     </div>
   );
