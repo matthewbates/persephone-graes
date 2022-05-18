@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Loading from "./components/Loading";
 import Menu from "./pages/Menu";
 import Navbar from "./components/Navbar";
+import NavbarMenu from "./components/NavbarMenu";
 import SaladsWraps from "./pages/SaladsWrap";
 import SidesDrinks from "./pages/SidesDrinks";
 
@@ -33,7 +34,6 @@ export default function App() {
         <BrowserRouter>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/breakfast" element={<Breakfast />} />
             <Route path="/sandwiches" element={<HotColdSandwiches />} />
@@ -41,6 +41,7 @@ export default function App() {
             <Route path="/sides" element={<SidesDrinks />} />
             <Route path="/juice" element={<Juices />} />
             <Route path="/contact" element={<Contact />} />
+            <Route exact path="/" element={<Home />} />
           </Routes>
           {/* <Footer /> */}
         </BrowserRouter>
