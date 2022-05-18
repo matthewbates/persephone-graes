@@ -13,13 +13,13 @@ export default function Navbar() {
     setOpenLinks(!openLinks);
   };
 
-  function onMouseEnter() {
-    window.innerHeight < 960 ? setDropdown(false) : setDropdown(true);
-  }
+  // function onMouseEnter() {
+  //   window.innerHeight < 960 ? setDropdown(false) : setDropdown(true);
+  // }
 
-  function onMouseLeave() {
-    window.innerHeight < 960 ? setDropdown(false) : setDropdown(false);
-  }
+  // function onMouseLeave() {
+  //   window.innerHeight < 960 ? setDropdown(false) : setDropdown(false);
+  // }
 
   return (
     <div className="navbar">

@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { DropdownItems } from "./DropdownItems";
 import { Link } from "react-router-dom";
-import "../styles/Dropdown.css";
+// import "../styles/Dropdown.css";
 
 export default function Dropdown() {
   const [click, setClick] = useState(false);
