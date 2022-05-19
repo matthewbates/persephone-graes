@@ -7,7 +7,6 @@ import Dropdown from "./Dropdown";
 
 export default function Navbar() {
   const [openLinks, setOpenLinks] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
 
   const toggleNavbar = () => {
     setOpenLinks(!openLinks);
@@ -28,17 +27,12 @@ export default function Navbar() {
         <div className="hiddenLinks">
           <Link to="/"> Home </Link>
           <Link to="/menu"> Menu </Link>
-          <Link to="/juices"> Juices </Link>
           <Link to="/contact"> Contact </Link>
         </div>
       </div>
       <div className="rightSide">
         <Link to="/"> Home </Link>
-        <Link to="/menu">
-          Menu <i className="fas fa-caret-down"></i>
-          {dropdown && <Dropdown />}
-        </Link>
-        <Link to="/juices"> Juices </Link>
+        <Link to="/menu">Menu</Link>
         <Link to="/contact"> Contact </Link>
         <button onClick={toggleNavbar}>
           <ReorderIcon />

@@ -3,7 +3,6 @@ import "./App.css";
 import { BrowserRouter, Routes, Route, Switch } from "react-router-dom";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
-import Juices from "./pages/Juices";
 import Home from "./pages/Home";
 import Loading from "./components/Loading";
 import Menu from "./pages/Menu";
@@ -54,7 +53,7 @@ export default function App() {
                 />
               }
             />
-            <Route path="/juice" element={<Juices />} />
+            {/* <Route path="/juice" element={<Juices />} /> */}
             <Route path="/contact" element={<Contact />} />
           </Routes>
           <Footer />
