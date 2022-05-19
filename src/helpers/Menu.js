@@ -77,4 +77,10 @@ export const items = [
       },
     ],
   },
+  {
+    id: 10,
+    name: "Reuben",
+    category: "Hot Sandwiches",
+    price: 12.0,
+  },
 ];

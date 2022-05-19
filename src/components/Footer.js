@@ -1,4 +1,5 @@
 import React from "react";
+import { SocialIcon } from "react-social-icons";
 
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
@@ -11,7 +12,11 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="social-media">
-        <InstagramIcon /> <FacebookIcon />
+        <FacebookIcon
+          url="https://www.linkedin.com/in/matthew-bates-71b7bb79/"
+          target="_blank"
+        />
+        <InstagramIcon />
       </div>
       <p>
         © {today.getFullYear()}:<i> {name}</i>

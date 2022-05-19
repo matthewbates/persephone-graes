@@ -29,37 +29,37 @@ export default function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 5000);
   });
 
   return (
     <div>
-      {/* {isLoading == true ? (
+      {isLoading == true ? (
         <div className="loading-icon">
           <Loading />
         </div>
       ) : null}
-      <div className="App" style={{ display: isLoading ? "none" : "block" }}> */}
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route
-            path="/menu"
-            element={
-              <Menu
-                items={menuItems}
-                categories={categories}
-                filterItems={filterItems}
-              />
-            }
-          />
-          <Route path="/juice" element={<Juices />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-      {/* </div> */}
+      <div className="App" style={{ display: isLoading ? "none" : "block" }}>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route
+              path="/menu"
+              element={
+                <Menu
+                  items={menuItems}
+                  categories={categories}
+                  filterItems={filterItems}
+                />
+              }
+            />
+            <Route path="/juice" element={<Juices />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </div>
     </div>
   );
 }
