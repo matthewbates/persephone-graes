@@ -93,3 +93,17 @@
     color: #414042;
   }
 }
+
+.home-title {
+  width: 4rem;
+  height: 4rem;
+}
+
+.homepage-info {
+  text-align: center;
+  padding: 1rem;
+}
+
+.home-button {
+  text-align: center;
+}

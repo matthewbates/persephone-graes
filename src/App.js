@@ -1,6 +1,11 @@
 import React, { Fragment, useState, useEffect } from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Switch,
+} from "react-router-dom";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -39,7 +44,7 @@ export default function App() {
         </div>
       ) : null}
       <div className="App" style={{ display: isLoading ? "none" : "block" }}>
-        <BrowserRouter>
+        <Router>
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -53,11 +58,10 @@ export default function App() {
                 />
               }
             />
-            {/* <Route path="/juice" element={<Juices />} /> */}
             <Route path="/contact" element={<Contact />} />
           </Routes>
           <Footer />
-        </BrowserRouter>
+        </Router>
       </div>
     </div>
   );

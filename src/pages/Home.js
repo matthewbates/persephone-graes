@@ -2,16 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/LogoNoText.png";
 import "../styles/Home.css";
+import Title from "../assets/TextWhite.png";
 
 function Home() {
   return (
-    <div className="home" style={{ backgroundImage: `url(${Logo})` }}>
+    // backgroundImage: `url(${Title})`
+    <div className="home" style={{ backgroundColor: "black" }}>
       <div className="headerContainer">
-        <h2>Persephone Grae's</h2>
-        <h2>Cafe & Juice Bar</h2>
-        <Link to="/">
-          <button> VIEW MENU </button>
-        </Link>
+        <div className="homepage-info">
+          <img src={Title} style={{ width: "250px", height: "100px" }} />
+        </div>
+        <div className="home-button">
+          <Link to="/">
+            <button>MENU </button>
+          </Link>
+        </div>
       </div>
     </div>
   );
