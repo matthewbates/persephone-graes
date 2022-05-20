@@ -35,17 +35,26 @@
   color: var(--clr-white);
 }
 .section-center {
+  background-color: black;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 90vw;
   margin: 0 auto;
   max-width: 1170px;
-  display: grid;
-  gap: 3rem 2rem;
+  /* display: grid; */
+  gap: 2rem;
   justify-items: center;
 }
+
+.section-center > div {
+  border: white solid;
+}
+
 .menu-item {
-  display: grid;
-  gap: 1rem 2rem;
-  max-width: 25rem;
+  text-align: center;
+  /* display: grid; */
+  /* gap: 1rem 2rem; */
+  /* max-width: 25rem; */
 }
 .photo {
   object-fit: cover;

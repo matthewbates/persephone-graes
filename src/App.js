@@ -12,9 +12,9 @@ import Home from "./pages/Home";
 import Loading from "./components/Loading";
 import Menu from "./pages/Menu";
 import Navbar from "./components/Navbar";
-import { items } from "./helpers/Menu";
+import { items } from "./helpers/menuImages";
 
-const allCategories = ["all", ...new Set(items.map((item) => item.category))];
+const allCategories = ["all", ...new Set(items.map((item) => item.category))]
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,6 +28,12 @@ export default function App() {
     }
     const newItems = items.filter((item) => item.category === category);
     setMenuItems(newItems);
+  }
+
+  function renderMenuItems() {
+    const menuItems = items.map((item, index) => {
+      console.log(item.photo)
+    })
   }
 
   useEffect(() => {

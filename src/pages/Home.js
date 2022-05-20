@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/LogoNoText.png";
 import "../styles/Home.css";
 import Title from "../assets/TextWhite.png";
+console.log(Title)
 
 function Home() {
   return (
@@ -14,7 +15,7 @@ function Home() {
         </div>
         <div className="home-button">
           <Link to="/">
-            <button>MENU </button>
+            <button>DOWNLOAD MENU</button>
           </Link>
         </div>
       </div>

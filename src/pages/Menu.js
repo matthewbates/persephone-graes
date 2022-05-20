@@ -3,7 +3,7 @@ import "../styles/Menu.css";
 import Categories from "../components/Categories";
 import MenuItem from "../components/MenuItem";
 
-export default function Menu({ items, categories, filterItems }) {
+export default function Menu({ photos, items, categories, filterItems }) {
   return (
     <>
       <div>
@@ -12,17 +12,11 @@ export default function Menu({ items, categories, filterItems }) {
       </div>
       {/* this displays the items */}
       <div className="section-center">
-        {items.map((item) => {
-          const { id, name, category, price } = item;
+        {items.map((item, index) => {
           return (
-            <article key={id} className="menu-item">
-              <div className="item-info">
-                <header>
-                  <h4>{name}</h4>
-                  <h4 className="price"></h4>
-                </header>
-              </div>
-            </article>
+            <div key={index} className="menu-item">
+              <img src={item.url} />
+            </div>
           );
         })}
       </div>
