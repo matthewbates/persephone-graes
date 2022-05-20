@@ -1,17 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/LogoNoText.png";
+import Placeholder from "../assets/Pizza.jpeg";
 import "../styles/Home.css";
 import Title from "../assets/TextWhite.png";
-console.log(Title)
 
 function Home() {
   return (
     // backgroundImage: `url(${Title})`
-    <div className="home" style={{ backgroundColor: "black" }}>
+    <div className="home">
       <div className="headerContainer">
         <div className="homepage-info">
-          <img src={Title} style={{ width: "250px", height: "100px" }} />
+          <img src={Title} style={{ width: "300px", height: "120px" }} />
         </div>
         <div className="home-button">
           <Link to="/">

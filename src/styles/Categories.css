@@ -19,6 +19,6 @@
 }
 
 .filter-btn:hover {
-  background: var(--clr-gold);
-  color: var(--clr-white);
+  background-color: #f1f2f2;
+  color: pink;
 }

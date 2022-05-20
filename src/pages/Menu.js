@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Menu.css";
 import Categories from "../components/Categories";
-import MenuItem from "../components/MenuItem";
 
 export default function Menu({ photos, items, categories, filterItems }) {
   return (
