@@ -14,12 +14,13 @@ import Menu from "./pages/Menu";
 import Navbar from "./components/Navbar";
 import { items } from "./helpers/menuImages";
 
-const allCategories = ["all", ...new Set(items.map((item) => item.category))]
+const allCategories = ["all", ...new Set(items.map((item) => item.category))];
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [menuItems, setMenuItems] = useState(items);
   const [categories, setCategories] = useState(allCategories);
+  const [select, setSelect] = useState("");
 
   function filterItems(category) {
     if (category === "all") {
@@ -32,8 +33,8 @@ export default function App() {
 
   function renderMenuItems() {
     const menuItems = items.map((item, index) => {
-      console.log(item.photo)
-    })
+      console.log(item.photo);
+    });
   }
 
   useEffect(() => {
@@ -44,31 +45,33 @@ export default function App() {
 
   return (
     <div>
-      {isLoading == true ? (
+      {/* {isLoading == true ? (
         <div className="loading-icon">
           <Loading />
         </div>
-      ) : null}
-      <div className="App" style={{ display: isLoading ? "none" : "block" }}>
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route
-              path="/menu"
-              element={
-                <Menu
-                  items={menuItems}
-                  categories={categories}
-                  filterItems={filterItems}
-                />
-              }
-            />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-          <Footer />
-        </Router>
-      </div>
+      ) : null} */}
+      {/* <div className="App" style={{ display: isLoading ? "none" : "block" }}> */}
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/menu"
+            element={
+              <Menu
+                select={select}
+                setSelect={setSelect}
+                items={menuItems}
+                categories={categories}
+                filterItems={filterItems}
+              />
+            }
+          />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </Router>
+      {/* </div> */}
     </div>
   );
 }

@@ -12,7 +12,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  padding-left: 150px;
+  padding-left: 100px;
 }
 
 .navbar .leftSide img {
@@ -73,7 +73,7 @@
     width: 70px;
   }
   .navbar .leftSide {
-    padding-left: 50px;
+    padding-left: 40px;
   }
 }
 
@@ -84,7 +84,7 @@
 
   .navbar .rightSide {
     justify-content: flex-end;
-    padding-right: 50px;
+    padding-right: 40px;
   }
 
   .navbar .rightSide button {

@@ -7,7 +7,7 @@ import BreakfastPlatter from "../assets/BreakfastPlatter.png";
 import BreakfastSandwich from "../assets/BreakfastSandwich.png";
 import Caesar from "../assets/Caesar.png";
 import Chips from "../assets/Chips.png";
-import Cobb from "../assets/Caesar.png";
+import Cobb from "../assets/Cobb.png";
 import Coffee from "../assets/Coffee.png";
 import Crawford from "../assets/Crawford.png";
 import Fajita from "../assets/Fajita.png";
@@ -33,7 +33,7 @@ import Soda from "../assets/Soda.png";
 import SteakAndCheese from "../assets/SteakAndCheese.png";
 
 export const items = [
-  { id: 1, url: Antipasto, category: "Salads" },
+  { id: 1, url: Antipasto, category: "Salads/Wraps" },
   { id: 2, url: Barker, category: "Sandwiches" },
   { id: 3, url: BiscuitsAndGravy, category: "Breakfast" },
   { id: 4, url: BLTAP, category: "Sandwiches" },
@@ -56,7 +56,7 @@ export const items = [
   { id: 21, url: Juices, category: "Sides" },
   { id: 22, url: MissPiggy, category: "Sandwiches" },
   { id: 23, url: Pancakes, category: "Breakfast" },
-  { id: 24, url: PicnicBasket, category: "Picnic Baskset" },
+  // { id: 24, url: PicnicBasket, category: "Picnic Baskset" },
   { id: 25, url: PigsInABasket, category: "Breakfast" },
   { id: 26, url: RainbowFalls, category: "Sandwiches" },
   { id: 27, url: RedRock, category: "Sandwiches" },

@@ -22,3 +22,10 @@
   background-color: #f1f2f2;
   color: pink;
 }
+
+@media only sceen and (max-width: 600px) {
+  .btn-container {
+    display: flex;
+    gap: 0;
+  }
+}
