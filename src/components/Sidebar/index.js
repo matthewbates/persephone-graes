@@ -18,13 +18,13 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink onClick={toggleSidebar} to="home">
+          <SidebarLink onClick={toggleSidebar} to="/">
             Home
           </SidebarLink>
-          <SidebarLink onClick={toggleSidebar} to="menu">
+          <SidebarLink onClick={toggleSidebar} to="/menu">
             Menu
           </SidebarLink>
-          <SidebarLink onClick={toggleSidebar} to="about">
+          <SidebarLink onClick={toggleSidebar} to="/about">
             About
           </SidebarLink>
         </SidebarMenu>

@@ -6,11 +6,11 @@ import {
   Route,
   Switch,
 } from "react-router-dom";
-import Contact from "./pages/Contact";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Loader from "./components/Loader";
-import Menu from "./pages/Menu";
+import Menu from "./components/Menu";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
@@ -56,7 +56,6 @@ export default function App() {
       <Router>
         <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
         <Navbar toggleSidebar={toggleSidebar} />
-        {/* <Hero /> */}
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route
@@ -64,6 +63,7 @@ export default function App() {
             element={
               <Menu
                 items={menuItems}
+                menuItems={menuItems}
                 categories={categories}
                 filterItems={filterItems}
               />
