@@ -1,5 +1,7 @@
+
+
 .menu {
-  background-color: grey;
+  background-color: #414042;
   width: 100%;
   height: auto;
   display: flex;
@@ -7,16 +9,21 @@
   align-items: center;
   flex-direction: column;
 }
-.item {
-  width: 100%;
-  min-width: 100%;
-  height: 100%;
-  object-fit: cover;
+.menu-list img {
+  width: 50%;
+  height: 50%;
+  object-fit: column;
+  display: flexbox;
 }
 
-@media only screen and (max-width: 1300px) {
-  .item {
-    grid-template-columns: 1fr 1fr;
+/* @media screen and (min-width: 768px) {
+  .items {
+    grid-template-columns: 225px 1fr;
+    gap: 0 1.25rem;
+    max-width: 40rem;
+  }
+  .photo {
+    height: 175px;
   }
 }
 
@@ -24,4 +31,4 @@
   .item {
     grid-template-columns: 1fr;
   }
-}
+} */

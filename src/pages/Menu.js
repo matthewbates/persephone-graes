@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { container, row } from "mdb-ui-kit"
 import "../styles/Menu.css";
 import Categories from "../components/Categories";
 
@@ -6,15 +7,13 @@ export default function Menu({
   items,
   categories,
   filterItems,
-  select,
-  setSelect,
 }) {
   return (
     <div className="menu">
       <Categories categories={categories} filterItems={filterItems} />
       <div className="menu-list">
         {items.map((item, index) => {
-          return <img key={index} className="items" src={item.url} />;
+          return <img key={index} className="item" src={item.url} />;
         })}
       </div>
     </div>
