@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import {
   Nav,
   NavbarContainer,
-  NavLogo,
   MobileIcon,
   NavMenu,
   NavItem,
@@ -18,15 +17,13 @@ export default function Navbar({ toggleSidebar }) {
     <>
       <Nav>
         <NavbarContainer>
-          {/* <NavLogo> */}
           <img src={Logo} />
-          {/* </NavLogo> */}
           <MobileIcon onClick={toggleSidebar}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="/hero">Home</NavLinks>
+              <NavLinks to="/">Home</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="/menu">Menu</NavLinks>

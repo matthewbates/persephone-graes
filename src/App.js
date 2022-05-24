@@ -9,7 +9,7 @@ import {
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import Loading from "./components/Loading";
+import Loader from "./components/Loader";
 import Menu from "./pages/Menu";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -56,7 +56,7 @@ export default function App() {
       <Router>
         <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
         <Navbar toggleSidebar={toggleSidebar} />
-        <Hero />
+        {/* <Hero /> */}
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route

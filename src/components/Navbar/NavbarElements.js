@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import { Link as LinkRoute } from "react-router-dom";
-import { Link as LinkScroll } from "react-scroll";
 
 export const Nav = styled.nav`
-  font-family: "Dalliance";
   /* make this #414042 upon project completion */
   background: black;
   height: 80px;
@@ -19,6 +17,10 @@ export const Nav = styled.nav`
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
+`;
+
+export const NavLogo = styled.img`
+  margin-left: 30px;
 `;
 
 export const NavbarContainer = styled.div`
@@ -62,7 +64,8 @@ export const NavItem = styled.li`
   height: 80px;
 `;
 
-export const NavLinks = styled(LinkScroll)`
+export const NavLinks = styled(LinkRoute)`
+  font-family: "Dalliance";
   color: #f1f2f2;
   display: flex;
   align-items: center;
