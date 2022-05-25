@@ -23,7 +23,7 @@ export default function Hero() {
   }
 
   return (
-    <HeroContainer id="home">
+    <HeroContainer id="/">
       <HeroBg>
         {/* <HeroLogo>{Logo}</HeroLogo> */}
         <VideoBg autoPlay loop muted src={Video}></VideoBg>
@@ -37,7 +37,7 @@ export default function Hero() {
             to="/"
             onMouseEnter={toggleHover}
             onMouseLeave={toggleHover}
-            primary={true}
+            primary="true"
             dark="true"
           >
             Download Menu {hover ? <ArrowForward /> : <ArrowRight />}

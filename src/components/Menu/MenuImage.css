@@ -1,0 +1,8 @@
+.menu-image {
+  object-fit: cover;
+  height: 300px;
+  width: 400px;
+  border: 0.25rem solid var(--clr-gold);
+  border-radius: var(--radius);
+  display: flex;
+}

@@ -2,7 +2,7 @@ import React from "react";
 import emailjs from "emailjs-com";
 import { Form, Input, TextArea, Button } from "semantic-ui-react";
 import Logo from "../../assets/LogoNoText.png";
-import "../../styles/Contact.css";
+import "./Contact.css";
 
 function handleFormSubmit(e) {
   e.preventDefault();
@@ -36,8 +36,6 @@ export default function Contact() {
     </div>
   );
 }
-
-
 
 // import React from "react";
 // import {

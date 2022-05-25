@@ -8,7 +8,6 @@ import {
 } from "react-router-dom";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Home from "./pages/Home";
 import Loader from "./components/Loader";
 import Menu from "./components/Menu";
 import Hero from "./components/Hero";
@@ -16,7 +15,7 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import { items } from "./helpers/menuImages";
 
-const allCategories = [...new Set(items.map((item) => item.category))];
+const allCategories = ["all", ...new Set(items.map((item) => item.category))];
 
 export default function App() {
   // const [isLoading, setIsLoading] = useState(true);
@@ -29,6 +28,10 @@ export default function App() {
   }
 
   function filterItems(category) {
+    if (category === "all") {
+      setMenuItems(items);
+      return;
+    }
     const newItems = items.filter((item) => item.category === category);
     setMenuItems(newItems);
   }

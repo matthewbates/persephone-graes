@@ -1,27 +1,34 @@
 import React from "react";
-import { MenuContainer, MenuWrapper } from "./MenuElements";
-import Categories from "../Categories";
+import "./MenuImage.css";
+import {
+  MenuContainer,
+  MenuWrapper,
+  MenuCategories,
+  MenuItems,
+} from "./MenuElements";
+import * as mdb from "mdb-ui-kit";
+import Categories from "../../components/Categories";
 
 export default function Menu({ menuItems, items, categories, filterItems }) {
   return (
     <MenuContainer>
-      <MenuWrapper>
+      <MenuCategories>
         <Categories categories={categories} filterItems={filterItems} />
+      </MenuCategories>
+      <MenuItems>
         {menuItems.map((item, index) => {
           return (
             <img
               style={{
                 backgroundColor: "#414042",
-                height: "100px",
-                width: "100px",
               }}
+              className="menu-image"
               key={index}
-              className="item"
               src={item.url}
             />
           );
         })}
-      </MenuWrapper>
+      </MenuItems>
     </MenuContainer>
   );
 }

@@ -18,15 +18,9 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink onClick={toggleSidebar} to="/">
-            Home
-          </SidebarLink>
-          <SidebarLink onClick={toggleSidebar} to="/menu">
-            Menu
-          </SidebarLink>
-          <SidebarLink onClick={toggleSidebar} to="/about">
-            About
-          </SidebarLink>
+          <SidebarLink to="/">Home</SidebarLink>
+          <SidebarLink to="/menu">Menu</SidebarLink>
+          <SidebarLink to="/about">About</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
           <SidebarRoute to="/contact">Contact Us</SidebarRoute>
