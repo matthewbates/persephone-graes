@@ -5,24 +5,36 @@ import Categories from "../../components/Categories";
 
 export default function Menu({ menu, categories, filterItems }) {
   return (
-    <div className="section-center">
-      <Categories categories={categories} filterItems={filterItems} />
-      {menu.map((menuItem) => {
-        const { id, title, img, price, desc } = menuItem;
-
-        return (
-          <article key={id} className="menu-item">
-            <img src={img} alt={title} className="photo" />
-            <div className="item-info">
-              <header>
-                <h4>{title}</h4>
-                <h4 className="price">${price}</h4>
-              </header>
-              <p className="item-text">{desc}</p>
-            </div>
-          </article>
-        );
-      })}
-    </div>
+    <>
+      <div className="menu-container">
+        <div>
+          <Categories
+            menu={menu}
+            categories={categories}
+            filterItems={filterItems}
+          />
+        </div>
+        <div className="section-center">
+          {menu.map((menuItem) => {
+            return (
+              <div key={menuItem.id} className="menu-item">
+                <img
+                  src={menuItem.img}
+                  alt={menuItem.title}
+                  className="photo"
+                />
+                <div className="item-info">
+                  <header>
+                    <h4>{menuItem.title}</h4>
+                    <h4 className="price">${menuItem.price}</h4>
+                  </header>
+                  <p className="item-text">{menuItem.desc}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </>
   );
 }

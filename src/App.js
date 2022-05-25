@@ -13,11 +13,11 @@ import Menu from "./components/Menu";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-// import { items } from "./helpers/menuImages";
+import { items } from "./helpers/menuImages";
 import { menu } from "./helpers/data";
 
 const allCategories = ["all", ...new Set(menu.map((menu) => menu.category))];
-// const allCategories = ["all", ...new Set(items.map((item) => item.category))];
+// const allItems = ["all", ...new Set(items.map((item) => item.category))];
 
 export default function App() {
   // const [isLoading, setIsLoading] = useState(true);

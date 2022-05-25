@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 export const FooterContainer = styled.footer`
   /* make this #414042 upon project completion */
   background-color: black;
+  /* margin-top: auto; */
+  /* display: absolute; */
+  /* bottom: 0; */
+  margin-top: auto;
 `;
 export const FooterWrap = styled.div`
   padding: 18px 24px;
