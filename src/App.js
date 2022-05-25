@@ -13,14 +13,16 @@ import Menu from "./components/Menu";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-import { items } from "./helpers/menuImages";
+// import { items } from "./helpers/menuImages";
+import { menu } from "./helpers/data";
 
-const allCategories = ["all", ...new Set(items.map((item) => item.category))];
+const allCategories = ["all", ...new Set(menu.map((menu) => menu.category))];
+// const allCategories = ["all", ...new Set(items.map((item) => item.category))];
 
 export default function App() {
   // const [isLoading, setIsLoading] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
-  const [menuItems, setMenuItems] = useState(items);
+  const [menuItems, setMenuItems] = useState(menu);
   const [categories, setCategories] = useState(allCategories);
 
   function toggleSidebar() {
@@ -29,17 +31,11 @@ export default function App() {
 
   function filterItems(category) {
     if (category === "all") {
-      setMenuItems(items);
+      setMenuItems(menu);
       return;
     }
-    const newItems = items.filter((item) => item.category === category);
+    const newItems = menu.filter((menu) => menu.category === category);
     setMenuItems(newItems);
-  }
-
-  function renderMenuItems() {
-    const menuItems = items.map((item, index) => {
-      console.log(item.photo);
-    });
   }
 
   // useEffect(() => {
@@ -65,8 +61,8 @@ export default function App() {
             path="/menu"
             element={
               <Menu
-                items={menuItems}
-                menuItems={menuItems}
+                menu={menuItems}
+                // menuItems={menuItems}
                 categories={categories}
                 filterItems={filterItems}
               />

@@ -1,21 +1,20 @@
 import React from "react";
-import { CategoryContainer, CategoryButton } from "./CategoryElements";
 
 export default function Categories({ categories, filterItems }) {
   return (
-    <CategoryContainer>
+    <div className="btn-container">
       {categories.map((category, index) => {
         return (
-          <CategoryButton
+          <button
             type="button"
             className="filter-btn"
             key={index}
             onClick={() => filterItems(category)}
           >
             {category}
-          </CategoryButton>
+          </button>
         );
       })}
-    </CategoryContainer>
+    </div>
   );
 }
