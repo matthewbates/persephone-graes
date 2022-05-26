@@ -79,7 +79,7 @@ export default function App() {
           <Route path="/about" element={<About noFooter={setShowFooter} />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
       {/* </div> */}
     </>

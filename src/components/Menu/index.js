@@ -1,6 +1,5 @@
 import React from "react";
-import "./MenuImage.css";
-import * as mdb from "mdb-ui-kit";
+import "./Menu.css";
 import Categories from "../../components/Categories";
 
 export default function Menu({ menu, categories, filterItems }) {
@@ -25,12 +24,10 @@ export default function Menu({ menu, categories, filterItems }) {
                 />
                 <div className="item-info">
                   <header>
-                    <h2>
-                      
-                    
-                      <u>{menuItem.title}</u>
-                    </h2>
-                    <h3 className="price">{menuItem.price}</h3>
+                    <h4 style={{ fontFamily: "Great Vibes" }}>
+                      {menuItem.title}
+                    </h4>
+                    <h4 className="price">{menuItem.price}</h4>
                   </header>
                   {menuItem.desc.split("\n").map((item, index) => {
                     return (
@@ -39,7 +36,6 @@ export default function Menu({ menu, categories, filterItems }) {
                       </p>
                     );
                   })}
-                  {/* <p className="item-text">{menuItem.desc}</p> */}
                 </div>
               </div>
             );

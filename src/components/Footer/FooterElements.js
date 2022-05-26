@@ -5,7 +5,7 @@ export const FooterContainer = styled.footer`
   /* make this #414042 upon project completion */
   background-color: black;
   bottom: 0;
-  /* position: fixed; */
+  position: fixed;
   width: 100%;
 `;
 export const FooterWrap = styled.div`

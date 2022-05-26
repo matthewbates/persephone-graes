@@ -1,25 +1,27 @@
-.btn-container {
+import styled from "styled-components";
+
+export const ButtonContainer = styled.div`
   margin-bottom: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  
-}
-.filter-btn {
+  margin-top: 15px;
+`;
+
+export const ButtonFilter = styled.button`
   font-family: "Iskoola Pota";
   background: transparent;
   border-color: transparent;
   font-size: 1rem;
   text-transform: capitalize;
-  margin: 0 0.5rem;
-  letter-spacing: 1px;
-  padding: 0.375rem 0.75rem;
-  color: var(--clr-gold);
   cursor: pointer;
+  margin: 0 0.5rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: 10px;
   transition: var(--transition);
-  border-radius: var(--radius);
-}
-.filter-btn:hover {
-  background: var(--clr-gold);
-  color: var(--clr-white);
-}
+
+  &:hover {
+    background: #414042;
+    color: #f1f2f2;
+  }
+`;

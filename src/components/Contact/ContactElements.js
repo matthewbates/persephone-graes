@@ -10,7 +10,6 @@ export const Container = styled.div`
   top: 0;
   z-index: 0;
   overflow: hidden;
-  /* display: flex */
 `;
 
 export const FormWrap = styled.div`

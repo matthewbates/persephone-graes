@@ -8,8 +8,8 @@ import {
 } from "@react-google-maps/api";
 
 const mapStyles = {
-  height: "50vh",
-  width: "80%",
+  height: "50vw",
+  width: "50%",
 };
 
 const defaultCenter = {
