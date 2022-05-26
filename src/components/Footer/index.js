@@ -10,9 +10,15 @@ import {
   SocialIconLink,
 } from "./FooterElements";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
-import Logo from "../../assets/LogoTextBlack.png";
+import { useLocation } from "react-router-dom";
 
 export default function Footer() {
+  const { pathname } = useLocation();
+
+  if (pathname === "./about") {
+    return null;
+  }
+
   return (
     <FooterContainer>
       <FooterWrap>

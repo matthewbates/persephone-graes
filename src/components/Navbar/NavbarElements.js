@@ -80,6 +80,8 @@ export const NavLinks = styled(LinkRoute)`
 `;
 
 export const NavBtn = styled.nav`
+  font-family: "Iskoola Pota";
+  font-size: 48px;
   display: flex;
   align-items: center;
 
@@ -89,6 +91,7 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(LinkRoute)`
+  font-family: "Iskoola Pota";
   border-radius: 50px;
   background: #f1f2f2;
   white-space: nowrap;
@@ -103,7 +106,7 @@ export const NavBtnLink = styled(LinkRoute)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #414042;
+    background: black;
     color: #f1f2f2;
   }
 `;

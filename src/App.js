@@ -7,7 +7,6 @@ import {
   Switch,
 } from "react-router-dom";
 import About from "./components/About";
-import GoogleMaps from "./components/GoogleMaps";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
@@ -26,6 +25,7 @@ export default function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [menuItems, setMenuItems] = useState(menu);
   const [categories, setCategories] = useState(allCategories);
+  const [showFooter, setShowFooter] = useState(true);
 
   function toggleSidebar() {
     setIsOpen((isOpen) => !isOpen);
@@ -47,35 +47,41 @@ export default function App() {
   }, []);
 
   return (
-    <div>
-      {isLoading == true ? (
+    <>
+      {/* {isLoading == true ? (
         <div className="loading-icon">
           <Loader />
         </div>
       ) : null}
-      <div className="App" style={{ display: isLoading ? "none" : "block" }}>
-        <Router>
-          <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
-          <Navbar toggleSidebar={toggleSidebar} />
-          <GoogleMaps />
-          <Routes>
-            <Route path="/" element={<Hero />} />
-            <Route
-              path="/menu"
-              element={
-                <Menu
-                  menu={menuItems}
-                  categories={categories}
-                  filterItems={filterItems}
-                />
-              }
-            />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-          <Footer />
-        </Router>
-      </div>
-    </div>
+      <div className="App" style={{ display: isLoading ? "none" : "block" }}> */}
+      <Router>
+        {showFooter && (
+          <nav>
+            {" "}
+            <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+            <Navbar toggleSidebar={toggleSidebar} />
+          </nav>
+        )}
+        {/* <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+        <Navbar toggleSidebar={toggleSidebar} /> */}
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route
+            path="/menu"
+            element={
+              <Menu
+                menu={menuItems}
+                categories={categories}
+                filterItems={filterItems}
+              />
+            }
+          />
+          <Route path="/about" element={<About noFooter={setShowFooter} />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </Router>
+      {/* </div> */}
+    </>
   );
 }

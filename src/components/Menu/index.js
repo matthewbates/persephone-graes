@@ -25,10 +25,21 @@ export default function Menu({ menu, categories, filterItems }) {
                 />
                 <div className="item-info">
                   <header>
-                    <h4>{menuItem.title}</h4>
-                    <h4 className="price">${menuItem.price}</h4>
+                    <h2>
+                      
+                    
+                      <u>{menuItem.title}</u>
+                    </h2>
+                    <h3 className="price">{menuItem.price}</h3>
                   </header>
-                  <p className="item-text">{menuItem.desc}</p>
+                  {menuItem.desc.split("\n").map((item, index) => {
+                    return (
+                      <p key={index} className="item-text">
+                        {item}
+                      </p>
+                    );
+                  })}
+                  {/* <p className="item-text">{menuItem.desc}</p> */}
                 </div>
               </div>
             );
