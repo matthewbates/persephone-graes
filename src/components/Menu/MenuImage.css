@@ -39,6 +39,7 @@
   display: block;
 }
 .item-info header {
+  font-family: "Iskoola Pota";
   display: flex;
   justify-content: space-between;
   border-bottom: 0.5px dotted var(--clr-grey-5);
@@ -50,6 +51,7 @@
   color: var(--clr-gold);
 }
 .item-text {
+  font-family: "Iskoola Pota";
   margin-bottom: 0;
   padding-top: 1rem;
 }

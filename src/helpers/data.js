@@ -35,11 +35,12 @@ import SteakAndCheese from "../assets/SteakAndCheese.png";
 export const menu = [
   {
     id: 1,
-    title: "buttermilk pancakes",
+    title: "Breakfast Platter",
     category: "breakfast",
-    price: 15.99,
-    img: Antipasto,
-    desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+    price: 11.00,
+    img: BreakfastPlatter,
+    desc: `2 Eggs Any Style with Your Choice of:\n
+    3 Pieces of Bacon | 2 Sausage Patties | 2 Chorizo Patties | 1 Ham Steak`,
   },
   {
     id: 2,
