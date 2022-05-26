@@ -3,7 +3,7 @@ import "./Categories.css";
 
 export default function Categories({ menu, categories, filterItems }) {
   return (
-    <div classname="btn-display">
+    // <div className="btn-display">
       <div className="btn-container">
         {categories.map((category, index) => {
           return (
@@ -18,6 +18,6 @@ export default function Categories({ menu, categories, filterItems }) {
           );
         })}
       </div>
-    </div>
+    // </div>
   );
 }

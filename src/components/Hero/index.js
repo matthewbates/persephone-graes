@@ -11,9 +11,9 @@ import {
   ArrowForward,
   ArrowRight,
 } from "./HeroElements";
-import { Button } from "../ButtonElement";
-import { Link } from "react-router-dom";
+import { BtnLink } from "../ButtonElement";
 import Video from "../../videos/video.mp4";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   const [hover, setHover] = useState(false);
@@ -32,16 +32,23 @@ export default function Hero() {
         <HeroH1>Persephone Grae's</HeroH1>
         <HeroP>Cafe & Juice Bar</HeroP>
         <HeroBtnWrapper>
-          <Button
-            //   this will lead to a downloaded, consolidated pdf version of menu
-            to="/"
+          <BtnLink
+            to={{ pathname: "https://google.com" }}
+            target="_blank"
             onMouseEnter={toggleHover}
             onMouseLeave={toggleHover}
             primary="true"
             dark="true"
           >
             Download Menu {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+          </BtnLink>
+          <p>
+            <a
+              href="https://drive.google.com/file/d/1P-vanpG8e6R3EMtsy25de-6XYk2vJlvO/view?usp=sharing"
+              target="blank"
+            ></a>
+            Download Menu
+          </p>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>

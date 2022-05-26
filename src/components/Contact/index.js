@@ -4,10 +4,6 @@ import { Form, Input, TextArea, Button } from "semantic-ui-react";
 import Logo from "../../assets/LogoNoText.png";
 import "./Contact.css";
 
-function handleFormSubmit(e) {
-  e.preventDefault();
-}
-
 export default function Contact() {
   return (
     <div className="contact">
