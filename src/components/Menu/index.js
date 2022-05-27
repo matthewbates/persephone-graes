@@ -5,6 +5,8 @@ import {
   MenuItem,
   MenuImage,
   MenuInfo,
+  MenuText,
+  MenuHeader,
 } from "./MenuElements";
 import "./Menu.css";
 import Categories from "../../components/Categories";
@@ -39,6 +41,9 @@ export default function Menu({ menu, categories, filterItems }) {
                     </h4>
                   </header>
                   <div className="item-text">
+                    {/* <p>
+                      <b>{price}</b>
+                    </p> */}
                     {desc.split("\n").map((item, index) => {
                       return <p key={index}>{item}</p>;
                     })}

@@ -1,7 +1,8 @@
 import React from "react";
 import emailjs from "emailjs-com";
 import { Form, Input, TextArea, Button } from "semantic-ui-react";
-import Logo from "../../assets/LogoNoText.png";
+import Logo from "../../assets/BarkerHouse.jpg";
+
 import "./Contact.css";
 
 export default function Contact() {
@@ -12,9 +13,13 @@ export default function Contact() {
         style={{ backgroundImage: `url(${Logo})` }}
       ></div>
       <div className="rightSide">
-        <h1> Contact Us</h1>
+        <h1 style={{ fontFamily: "Great Vibes" }}>Contact Us</h1>
 
-        <form id="contact-form" method="POST">
+        <form
+          style={{ fontFamily: "Iskoola Pota" }}
+          id="contact-form"
+          method="POST"
+        >
           <label htmlFor="name">Full Name</label>
           <input name="name" placeholder="Enter full name..." type="text" />
           <label htmlFor="email">Email</label>

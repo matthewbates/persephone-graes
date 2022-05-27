@@ -53,7 +53,7 @@ export const menu = [
     id: 3,
     title: "Biscuits & Gravy",
     category: "breakfast",
-    price: "Half: 5.50 | Full: 9.50",
+    price: "1/2: 5.50 | Full: 9.50",
     img: BiscuitsAndGravy,
     desc: "Fluffy Buttermilk Biscuits Smothered in Homemade Sausage Gravy\nAdd 2 Eggs Any Style for 2.50",
   },
