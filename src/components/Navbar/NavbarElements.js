@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Link as LinkRoute } from "react-router-dom";
 
 export const Nav = styled.nav`
-  /* make this #414042 upon project completion */
   background: black;
   height: 80px;
   /* margin-top: -80px; */
@@ -79,6 +78,22 @@ export const NavLinks = styled(LinkRoute)`
   }
 `;
 
+export const SocialIcons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70px;
+  margin-top: 4px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const SocialIconLink = styled.a`
+  color: #fff;
+`;
+
 export const NavBtn = styled.nav`
   font-family: "Iskoola Pota";
   font-size: 48px;
@@ -95,13 +110,13 @@ export const NavBtnLink = styled(LinkRoute)`
   border-radius: 50px;
   background: #f1f2f2;
   white-space: nowrap;
-  padding: 10px 22px;
+  padding: 6px 22px;
   color: #414042;
   font-size: 16px;
   outline: none;
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.s ease-in-out;
   text-decoration: none;
 
   &:hover {

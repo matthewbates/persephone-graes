@@ -13,11 +13,6 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
 
 export default function Footer() {
-  const { pathname } = useLocation();
-
-  if (pathname === "./about") {
-    return null;
-  }
 
   return (
     <FooterContainer>

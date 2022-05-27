@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const MenuContainer = styled.div`
   padding: 2rem 0;
+  background-color: #f1f2f2;
 `;
 
 export const MenuCenter = styled.div`

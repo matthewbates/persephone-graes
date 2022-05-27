@@ -51,7 +51,7 @@ export const SidebarLink = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 22px;
+  margin-right: 14px;
   font-size: 1.5rem;
   text-decoration: none;
   list-style: none;
@@ -64,6 +64,27 @@ export const SidebarLink = styled(Link)`
     color: #01bf71;
     transition: 0.2s ease-in-out;
   }
+`;
+
+export const SocialIcons = styled.div`
+  font-family: "Dalliance";
+  /* width: 70px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 40px;
+  margin-right: 14px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+`;
+
+export const SocialIconLink = styled.a`
+  color: #fff;
 `;
 
 export const SideBtnWrap = styled.div`

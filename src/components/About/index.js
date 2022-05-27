@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { GoogleStyles } from "./AboutElements";
+import { GoogleStyles, AboutHeader, AboutInfoText } from "./AboutElements";
 import {
   GoogleMap,
   LoadScript,
@@ -34,6 +34,8 @@ export default function About({ noFooter }) {
 
   return (
     <>
+      <AboutHeader>Located in the Historic Barker House</AboutHeader>
+      <AboutInfoText>819 Manitou Ave., Manitou Springs, CO</AboutInfoText>
       <GoogleStyles>
         <LoadScript googleMapsApiKey="AIzaSyALOtOkU0ZXbOvklXv4EkwjEHU7VYJR9fw">
           <GoogleMap
@@ -44,12 +46,6 @@ export default function About({ noFooter }) {
             {location.map((e, index) => {
               return <Marker key={index} position={e.location} />;
             })}
-            {selected.location && (
-              <InfoWindow
-                position={selected.location}
-                clickable={false}
-              ></InfoWindow>
-            )}
           </GoogleMap>
         </LoadScript>
       </GoogleStyles>
