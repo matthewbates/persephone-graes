@@ -23,7 +23,7 @@ export const CloseIcon = styled(FaTimes)`
 
 export const Icon = styled.div`
   position: absolute;
-  top: 1.2rem;
+  top: 1.4rem;
   right: 1.5rem;
   background: transparent;
   font-size: 2rem;
@@ -51,7 +51,7 @@ export const SidebarLink = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 44px;
+  margin-right: 22px;
   font-size: 1.5rem;
   text-decoration: none;
   list-style: none;

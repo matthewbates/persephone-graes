@@ -1,11 +1,18 @@
 import React from "react";
+import {
+  MenuContainer,
+  MenuCenter,
+  MenuItem,
+  MenuImage,
+  MenuInfo,
+} from "./MenuElements";
 import "./Menu.css";
 import Categories from "../../components/Categories";
 
 export default function Menu({ menu, categories, filterItems }) {
   return (
     <>
-      <div className="menu-container">
+      <MenuContainer>
         <div>
           <Categories
             menu={menu}
@@ -13,35 +20,38 @@ export default function Menu({ menu, categories, filterItems }) {
             filterItems={filterItems}
           />
         </div>
-        <div className="section-center">
-          {menu.map((menuItem) => {
+        <MenuCenter>
+          {menu.map(({ id, img, title, desc, price }) => {
             return (
-              <div key={menuItem.id} className="menu-item">
-                <img
-                  src={menuItem.img}
-                  alt={menuItem.title}
-                  className="photo"
-                />
+              <MenuItem key={id}>
+                <MenuImage src={img} alt={title} />
                 <div className="item-info">
                   <header>
-                    <h4 style={{ fontFamily: "Great Vibes" }}>
-                      {menuItem.title}
+                    <h4
+                      style={{
+                        fontFamily: "Great Vibes",
+                        fontSize: "1.6rem",
+                        width: "100%",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      {title}
                     </h4>
-                    <h4 className="price">{menuItem.price}</h4>
                   </header>
-                  {menuItem.desc.split("\n").map((item, index) => {
-                    return (
-                      <p key={index} className="item-text">
-                        {item}
-                      </p>
-                    );
-                  })}
+                  <div className="item-text">
+                    {desc.split("\n").map((item, index) => {
+                      return <p key={index}>{item}</p>;
+                    })}
+                    <p>
+                      <b>{price}</b>
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </MenuItem>
             );
           })}
-        </div>
-      </div>
+        </MenuCenter>
+      </MenuContainer>
     </>
   );
 }

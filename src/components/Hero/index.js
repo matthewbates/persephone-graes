@@ -30,7 +30,7 @@ export default function Hero() {
   return (
     <HeroContainer id="/">
       <HeroBg>
-        {/* <VideoBg autoPlay loop muted src={Video}></VideoBg> */}
+        <VideoBg autoPlay loop muted src={Video}></VideoBg>
       </HeroBg>
       <HeroContent>
         <HeroH1>Persephone Grae's</HeroH1>
