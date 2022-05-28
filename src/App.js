@@ -4,17 +4,14 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Switch,
 } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 import Loader from "./components/Loader";
 import Menu from "./components/Menu";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-import { items } from "./helpers/menuImages";
 import { menu } from "./helpers/data";
 
 const allCategories = [...new Set(menu.map((menu) => menu.category))];
@@ -31,10 +28,6 @@ export default function App() {
   }
 
   function filterItems(category) {
-    if (category === "all") {
-      setMenuItems(menu);
-      return;
-    }
     const newItems = menu.filter((menu) => menu.category === category);
     setMenuItems(newItems);
   }
@@ -71,7 +64,6 @@ export default function App() {
             <Route path="/about" element={<About noFooter={setShowFooter} />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-          {/* <Footer /> */}
         </Router>
       </div>
     </>
