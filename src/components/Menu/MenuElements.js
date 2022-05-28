@@ -13,18 +13,16 @@ export const MenuCenter = styled.div`
   gap: 3rem 2rem;
   justify-items: center;
   margin-bottom: 50px;
-
   @media screen and (min-width: 1200px) {
     width: 95vw;
     grid-template-columns: 1fr 1fr;
   }
 `;
 
-export const MenuItem = styled.div`
+export const MenuWrapper = styled.div`
   display: grid;
   gap: 1rem 2rem;
   max-width: 25rem;
-
   @media screen and (min-width: 768px) {
     grid-template-columns: 225px 1fr;
     gap: 0 1.25rem;
@@ -39,13 +37,11 @@ export const MenuImage = styled.img`
   height: 200px;
   width: 100%;
   display: block;
-
   @media screen and (min-width: 768px) {
     .photo {
       height: 200px;
     }
   }
-
   @media screen and (min-width: 1200px) {
     .photo {
       height: 215px;
@@ -67,12 +63,30 @@ export const MenuHeader = styled.header`
   text-align: center;
   justify-content: space-between;
   border-bottom: 1.8px solid var(--clr-grey-5);
-  font-family: Great Vibes;
+`;
+
+export const MenuH4 = styled.h4`
+  font-family: "Great Vibes";
   font-size: 1.6rem;
   width: 100%;
   font-weight: bold;
   letter-spacing: var(--spacing);
   line-height: 1.25;
   margin-bottom: 0.75rem;
-  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+
+  @media screen and (min-width: 800px) {
+    line-height: 1;
+  }
+`;
+
+export const MenuInfo = styled.div``;
+
+export const MenuItem = styled.p`
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+`;
+
+export const MenuPrice = styled.p`
+  font-weight: bold;
 `;

@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { GoogleStyles, AboutHeader, AboutInfoText } from "./AboutElements";
+import {
+  GoogleStyles,
+  AboutHeader,
+  AboutInfoText,
+  AboutNumber,
+} from "./AboutElements";
 import {
   GoogleMap,
   LoadScript,
@@ -36,6 +41,9 @@ export default function About({ noFooter }) {
     <>
       <AboutHeader>Located in the Historic Barker House</AboutHeader>
       <AboutInfoText>819 Manitou Ave., Manitou Springs, CO</AboutInfoText>
+      <AboutNumber>
+        <a href="tel:PHONE_NUM">(719) 234-2467</a>
+      </AboutNumber>
       <GoogleStyles>
         <LoadScript googleMapsApiKey="AIzaSyALOtOkU0ZXbOvklXv4EkwjEHU7VYJR9fw">
           <GoogleMap

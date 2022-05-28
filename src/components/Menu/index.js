@@ -2,11 +2,14 @@ import React from "react";
 import {
   MenuContainer,
   MenuCenter,
-  MenuItem,
+  MenuWrapper,
   MenuImage,
   MenuInfo,
   MenuText,
   MenuHeader,
+  MenuH4,
+  MenuItem,
+  MenuPrice,
 } from "./MenuElements";
 import "./Menu.css";
 import Categories from "../../components/Categories";
@@ -25,31 +28,20 @@ export default function Menu({ menu, categories, filterItems }) {
         <MenuCenter>
           {menu.map(({ id, img, title, desc, price }) => {
             return (
-              <MenuItem key={id}>
+              <MenuWrapper key={id}>
                 <MenuImage src={img} alt={title} />
-                <div className="item-info">
-                  <header>
-                    <h4
-                      style={{
-                        fontFamily: "Great Vibes",
-                        fontSize: "1.6rem",
-                        width: "100%",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      {title}
-                    </h4>
-                  </header>
-                  <div className="item-text">
+                <MenuInfo>
+                  <MenuHeader>
+                    <MenuH4>{title}</MenuH4>
+                  </MenuHeader>
+                  <MenuText>
                     {desc.split("\n").map((item, index) => {
-                      return <p key={index}>{item}</p>;
+                      return <MenuItem key={index}>{item}</MenuItem>;
                     })}
-                    <p>
-                      <b>{price}</b>
-                    </p>
-                  </div>
-                </div>
-              </MenuItem>
+                    <MenuPrice>{price}</MenuPrice>
+                  </MenuText>
+                </MenuInfo>
+              </MenuWrapper>
             );
           })}
         </MenuCenter>

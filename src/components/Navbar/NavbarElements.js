@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkRoute } from "react-router-dom";
 
 export const Nav = styled.nav`
-  background: black;
+  background: #414042;
   height: 80px;
   /* margin-top: -80px; */
   display: flex;
@@ -110,7 +110,7 @@ export const NavBtnLink = styled(LinkRoute)`
   border-radius: 50px;
   background: #f1f2f2;
   white-space: nowrap;
-  padding: 6px 22px;
+  padding: 6px 18px;
   color: #414042;
   font-size: 16px;
   outline: none;
@@ -121,7 +121,7 @@ export const NavBtnLink = styled(LinkRoute)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: black;
+    background: #414042;
     color: #f1f2f2;
   }
 `;

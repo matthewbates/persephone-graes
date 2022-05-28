@@ -27,7 +27,7 @@ export default function App() {
   const [showFooter, setShowFooter] = useState(true);
 
   function toggleSidebar() {
-    setIsOpen((isOpen) => !isOpen);
+    setIsOpen(!isOpen);
   }
 
   function filterItems(category) {
@@ -54,15 +54,8 @@ export default function App() {
       ) : null}
       <div className="App" style={{ display: isLoading ? "none" : "block" }}>
         <Router>
-          {showFooter && (
-            <nav>
-              {" "}
-              <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
-              <Navbar toggleSidebar={toggleSidebar} />
-            </nav>
-          )}
-          {/* <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
-        <Navbar toggleSidebar={toggleSidebar} /> */}
+          <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+          <Navbar toggleSidebar={toggleSidebar} />
           <Routes>
             <Route path="/" element={<Hero />} />
             <Route
