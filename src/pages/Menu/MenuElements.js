@@ -23,7 +23,7 @@ export const MenuWrapper = styled.div`
   display: grid;
   gap: 1rem 2rem;
   max-width: 25rem;
-  /* border: 1px solid #f1f2f2; */
+  border: 1px solid #f1f2f2;
   @media screen and (min-width: 768px) {
     grid-template-columns: 225px 1fr;
     gap: 0 1.25rem;
@@ -85,7 +85,8 @@ export const MenuH4 = styled.h4`
   }
 `;
 
-export const MenuInfo = styled.div``;
+export const MenuInfo = styled.div`
+`;
 
 export const MenuItem = styled.p`
   color: #f1f2f2;
