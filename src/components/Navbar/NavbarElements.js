@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkRoute } from "react-router-dom";
 
 export const Nav = styled.nav`
-  background: #414042;
+  background: black;
   height: 80px;
   /* margin-top: -80px; */
   display: flex;
@@ -40,7 +40,7 @@ export const MobileIcon = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 45%);
+    transform: translate(-100%, 65%);
     font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
@@ -116,12 +116,12 @@ export const NavBtnLink = styled(LinkRoute)`
   outline: none;
   border: none;
   cursor: pointer;
-  transition: all 0.s ease-in-out;
+  transition: all 0s ease-in-out;
   text-decoration: none;
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #414042;
+    background: black;
     color: #f1f2f2;
   }
 `;

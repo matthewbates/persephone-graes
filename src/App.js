@@ -5,11 +5,11 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import About from "./components/About";
-import Contact from "./components/Contact";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 import Loader from "./components/Loader";
-import Menu from "./components/Menu";
-import Hero from "./components/Hero";
+import Menu from "./pages/Menu";
+import Hero from "./pages/Hero";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import { menu } from "./helpers/data";

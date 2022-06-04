@@ -9,6 +9,7 @@ export const ButtonContainer = styled.div`
 `;
 
 export const ButtonFilter = styled.button`
+  color: #f1f2f2;
   font-family: "Iskoola Pota";
   background: transparent;
   border-color: transparent;
@@ -21,7 +22,7 @@ export const ButtonFilter = styled.button`
   transition: var(--transition);
 
   &:hover {
-    background: #414042;
-    color: #f1f2f2;
+    background: #f1f2f2;
+    color: #414042;
   }
 `;

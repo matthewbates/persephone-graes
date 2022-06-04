@@ -10,6 +10,7 @@ import {
   MenuH4,
   MenuItem,
   MenuPrice,
+  MenuSubtext,
 } from "./MenuElements";
 import "./Menu.css";
 import Categories from "../../components/Categories";
@@ -29,7 +30,7 @@ export default function Menu({ menu, categories, filterItems }) {
           {menu.map(({ id, img, title, desc, price }) => {
             return (
               <MenuWrapper key={id}>
-                <MenuImage src={img} alt={title} />
+                {/* <MenuImage src={img} alt={title} /> */}
                 <MenuInfo>
                   <MenuHeader>
                     <MenuH4>{title}</MenuH4>
@@ -45,6 +46,13 @@ export default function Menu({ menu, categories, filterItems }) {
             );
           })}
         </MenuCenter>
+        <MenuSubtext>
+          *Indicates precooked weight
+          <br /> **Conuming raw or undercooked meats, poultry, seafood,
+          shellfish or eggs may increase your risk of foodborne illness,
+          especially if you have certain medical conditions.
+          <br /> Pries do not include tax
+        </MenuSubtext>
       </MenuContainer>
     </>
   );

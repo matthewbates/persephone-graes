@@ -12,7 +12,7 @@ import {
   ArrowForward,
   ArrowRight,
 } from "./HeroElements";
-import { BtnLink } from "../ButtonElement";
+import { BtnLink } from "../../components/ButtonElement";
 import Video from "../../videos/video.mp4";
 import { saveAs } from "file-saver";
 
