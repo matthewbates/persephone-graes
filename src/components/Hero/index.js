@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Logo from "../../assets/TextWhite.png";
+import Logo from "../../assets/Text/TextWhite.png";
+import Menu from "../../assets/Menu.pdf";
 import {
   HeroContainer,
   HeroBg,
@@ -13,12 +14,17 @@ import {
 } from "./HeroElements";
 import { BtnLink } from "../ButtonElement";
 import Video from "../../videos/video.mp4";
+import { saveAs } from "file-saver";
 
 export default function Hero() {
   const [hover, setHover] = useState(false);
 
   function toggleHover() {
     setHover((hover) => !hover);
+  }
+
+  function downloadMenu() {
+    saveAs(Menu, "pgs.pdf");
   }
 
   function handleClick() {
@@ -37,7 +43,7 @@ export default function Hero() {
         <HeroP>Cafe & Juice Bar</HeroP>
         <HeroBtnWrapper>
           <BtnLink
-            onClick={handleClick}
+            onClick={downloadMenu}
             onMouseEnter={toggleHover}
             onMouseLeave={toggleHover}
             target="_blank"

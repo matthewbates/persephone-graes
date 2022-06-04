@@ -13,7 +13,7 @@ import {
 } from "./NavbarElements";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
-import Logo from "../../assets/LogoNoText.png";
+import Logo from "../../assets/Text/LogoNoText.png";
 
 export default function Navbar({ toggleSidebar }) {
   return (
