@@ -10,9 +10,10 @@ export const MenuCenter = styled.div`
   margin: 0 auto;
   max-width: 1170px;
   display: grid;
-  gap: 3rem 2rem;
+  gap: 4rem 2rem;
   justify-items: center;
   margin-bottom: 50px;
+
   @media screen and (min-width: 1200px) {
     width: 95vw;
     grid-template-columns: 1fr 1fr;
@@ -23,7 +24,7 @@ export const MenuWrapper = styled.div`
   display: grid;
   gap: 1rem 2rem;
   max-width: 25rem;
-  border: 1px solid #f1f2f2;
+  /* border: 1px solid #f1f2f2; */
   @media screen and (min-width: 768px) {
     grid-template-columns: 225px 1fr;
     gap: 0 1.25rem;
@@ -53,11 +54,10 @@ export const MenuImage = styled.img`
 export const MenuText = styled.div`
   color: #f1f2f2;
   font-family: "Iskoola Pota";
-  /* margin-bottom: 0; */
-  /* margin-top: 0; */
   padding-top: 0.8rem;
   text-align: center;
   /* font-size: 12px; */
+  padding: 0 auto;
 `;
 
 export const MenuHeader = styled.header`
@@ -85,8 +85,7 @@ export const MenuH4 = styled.h4`
   }
 `;
 
-export const MenuInfo = styled.div`
-`;
+export const MenuInfo = styled.div``;
 
 export const MenuItem = styled.p`
   color: #f1f2f2;
@@ -111,6 +110,6 @@ export const MenuSubtext = styled.p`
   @media screen and (max-width: 420px) {
     font-size: 6px;
     text-align: center;
-    align-items: center
+    align-items: center;
   }
 `;
