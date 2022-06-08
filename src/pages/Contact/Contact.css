@@ -25,14 +25,13 @@
   font-family: "Great Vibes";
   font-weight: bold;
   font-size: 70px;
-  /* margin-left: 30px; */
   text-align: center;
 }
 
 .contact .rightSide h4,
 a {
   text-align: center;
-  line-height: 40px;
+  line-height: 20px;
   color: black;
 }
 
@@ -50,37 +49,18 @@ form input {
   width: 80%;
   border: none;
   border-bottom: 1px solid #414042;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 form textarea {
   margin-top: 15px;
   height: 80px;
   width: 80%;
-  border: 1px solid black;
+  border: 2px solid black;
   outline: none;
   display: block;
   border-bottom: 1px solid #414042;
   color: #414042;
-
-  /* border-radius: 0.25rem;
-  padding: 0.5rem;
-  margin-bottom: 0.5rem;
-  outline: none;
-  display: block;
-  width: 100%;
-  font-size: 1rem;
-  line-height: 1; */
-}
-input::placeholder,
-textarea::placeholder {
-  font-weight: bold;
-  color: #414042;
-  font-family: Arial, Helvetica, sans-serif;
-}
-form input:focus,
-textarea:focus {
-  outline: none;
 }
 
 form label {

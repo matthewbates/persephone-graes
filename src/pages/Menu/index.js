@@ -12,7 +12,6 @@ import {
   MenuPrice,
   MenuSubtext,
 } from "./MenuElements";
-import "./Menu.css";
 import Categories from "../../components/Categories";
 
 export default function Menu({ menu, categories, filterItems }) {

@@ -1,104 +1,85 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const Container = styled.div`
-  min-height: 692px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  overflow: hidden;
-`;
-
-export const FormWrap = styled.div`
-  height: 100%;
+export const ContactContainer = styled.div`
+  width: 100%;
+  height: 90vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
 
-  @media screen and (max-width: 400px) {
-    height: 80%;
+  .leftSide {
+    height: 100%;
+    flex: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-`;
 
-export const Icon = styled(Link)`
-  margin-left: 32px;
-  margin-top: 32px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 700;
-  font-size: 32px;
-
-  @media screen and (max-width: 480px) {
-    margin-left: 16px;
-    margin-top: 8px;
+  .rightSide {
+    justify-content: center;
+    height: 100%;
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-`;
 
-export const FormContent = styled.div`
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  .rightSide h1 {
+    font-family: "Great Vibes";
+    font-weight: bold;
+    font-size: 70px;
+    text-align: center;
+  }
 
-  @media screen and (max-width: 480px) {
-    padding: 10px;
+  .rightSide h4,
+  a {
+    text-align: center;
+    line-height: 20px;
+    color: black;
   }
 `;
 
 export const Form = styled.form`
-  background: #010101;
-  max-width: 400px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: auto;
   height: auto;
-  width: 100%;
-  z-index: 1;
-  display: grid;
-  margin: 0 auto;
-  padding: 80px 32px;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
-
-  @media screen and (max-width: 400px) {
-    padding: 32px 32px;
-  }
-`;
-
-export const FormH1 = styled.h1`
-  margin-bottom: 40px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  text-align: center;
+  padding: 30px;
 `;
 
 export const FormLabel = styled.label`
-  margin-bottom: 8px;
-  font-size: 14px;
-  color: #fff;
+  margin-top: 15px;
+  left: 0;
+  right: 0;
+  color: #414042;
 `;
 
 export const FormInput = styled.input`
-  padding: 16px 16px;
-  margin-bottom: 32px;
+  height: 40px;
+  width: 80%;
   border: none;
-  border-radius: 4px;
+  border-bottom: 1px solid #414042;
+  border: 2px solid black;
+`;
+
+export const FormTextArea = styled.textarea`
+  margin-top: 15px;
+  height: 80px;
+  width: 80%;
+  border: 2px solid black;
+  outline: none;
+  display: block;
+  border-bottom: 1px solid #414042;
+  color: #414042;
 `;
 
 export const FormButton = styled.button`
-  background: #01bf71;
-  padding: 16px 0;
+  margin-top: 40px;
+  width: 140px;
+  height: 40px;
   border: none;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 20px;
+  background-color: #414042;
+  color: #f1f2f2;
+  font-size: 15px;
   cursor: pointer;
-`;
-
-export const Text = styled.span`
-  text-align: center;
-  margin-top: 24px;
-  color: #fff;
-  font-size: 14px;
 `;
