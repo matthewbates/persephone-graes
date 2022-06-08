@@ -110,7 +110,7 @@ export const NavBtnLink = styled(LinkRoute)`
   border-radius: 50px;
   background: #f1f2f2;
   white-space: nowrap;
-  padding: 6px 18px;
+  padding: 0px 18px;
   color: #414042;
   font-size: 16px;
   outline: none;

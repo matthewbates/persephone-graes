@@ -13,8 +13,9 @@ export const MenuCenter = styled.div`
   gap: 4rem 2rem;
   justify-items: center;
   margin-bottom: 50px;
+  border: 2px solid #fff;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     width: 95vw;
     grid-template-columns: 1fr 1fr;
   }
@@ -58,6 +59,7 @@ export const MenuText = styled.div`
   text-align: center;
   /* font-size: 12px; */
   padding: 0 auto;
+  margin-bottom: 10px;
 `;
 
 export const MenuHeader = styled.header`
@@ -67,7 +69,7 @@ export const MenuHeader = styled.header`
   display: flex;
   text-align: center;
   justify-content: space-between;
-  /* border-bottom: 1.8px solid var(--clr-grey-5); */
+  margin-top: 20px;
 `;
 
 export const MenuH4 = styled.h4`
@@ -85,7 +87,9 @@ export const MenuH4 = styled.h4`
   }
 `;
 
-export const MenuInfo = styled.div``;
+export const MenuInfo = styled.div`
+  /* border: 2px solid #fff; */
+`;
 
 export const MenuItem = styled.p`
   color: #f1f2f2;
@@ -97,18 +101,17 @@ export const MenuPrice = styled.p`
 `;
 
 export const MenuSubtext = styled.p`
-  margin-left: 10rem;
-  margin-right: 10rem;
-  /* border: 1px solid black; */
-  display: flex;
   color: #f1f2f2;
+  line-height: 20px;
   text-align: center;
   align-items: center;
-  font-size: 10px;
+  font-size: 12px;
   /* margin-left: 18rem; */
 
   @media screen and (max-width: 420px) {
-    font-size: 6px;
+    font-size: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
     text-align: center;
     align-items: center;
   }

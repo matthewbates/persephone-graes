@@ -13,25 +13,21 @@ export default function Contact() {
         style={{ backgroundImage: `url(${Logo})` }}
       ></div>
       <div className="rightSide">
-        <h1 style={{ fontFamily: "Great Vibes" }}>Contact Us</h1>
-
+        <h1>Contact Us</h1>
+        <h4>~ Open Everyday, 7 - 4 ~</h4>
+        <a href="tel:PHONE_NUM">(719) 755-4215</a>
         <form
           style={{ fontFamily: "Iskoola Pota" }}
           id="contact-form"
           method="POST"
         >
           <label htmlFor="name">Full Name</label>
-          <input name="name" placeholder="Enter full name..." type="text" />
+          <input name="name" type="text" required />
           <label htmlFor="email">Email</label>
-          <input name="email" placeholder="Enter email..." type="email" />
+          <input name="email" type="email" required />
           <label htmlFor="message">Message</label>
-          <textarea
-            rows="6"
-            placeholder="Enter message..."
-            name="message"
-            required
-          ></textarea>
-          <button type="submit"> Send Message</button>
+          <textarea rows="6" name="message" required></textarea>
+          <button type="submit">Send Message</button>
         </form>
       </div>
     </div>

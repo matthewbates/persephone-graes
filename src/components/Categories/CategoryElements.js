@@ -6,6 +6,7 @@ export const ButtonContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 15px;
+  font-size: 12px;
 `;
 
 export const ButtonFilter = styled.button`
@@ -18,7 +19,7 @@ export const ButtonFilter = styled.button`
   cursor: pointer;
   margin: 0 0.5rem;
   padding: 0.375rem 0.75rem;
-  border-radius: 10px;
+  border-radius: 20px;
   transition: var(--transition);
 
   &:hover {
