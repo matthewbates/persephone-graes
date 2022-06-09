@@ -73,8 +73,8 @@ export const NavLinks = styled(LinkRoute)`
   height: 100%;
   cursor: pointer;
 
-  &.active {
-    border-bottom: 3px solid #01bf71;
+  &:hover {
+    border-bottom: 3px solid #f1f2f2;
   }
 `;
 
@@ -107,7 +107,7 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkRoute)`
   font-family: "Iskoola Pota";
-  border-radius: 50px;
+  border-radius: 25px;
   background: #f1f2f2;
   white-space: nowrap;
   padding: 0px 18px;

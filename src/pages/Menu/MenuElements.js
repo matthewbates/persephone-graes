@@ -74,13 +74,10 @@ export const MenuHeader = styled.header`
 
 export const MenuH4 = styled.h4`
   font-family: "Great Vibes";
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   width: 100%;
-  font-weight: bold;
-  letter-spacing: var(--spacing);
   line-height: 1.25;
   margin-bottom: 0.75rem;
-  margin-bottom: 0.5rem;
 
   @media screen and (min-width: 800px) {
     line-height: 1;

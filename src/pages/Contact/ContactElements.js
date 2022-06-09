@@ -33,7 +33,6 @@ export const ContactContainer = styled.div`
   .rightSide h4,
   a {
     text-align: center;
-    line-height: 20px;
     color: black;
   }
 `;
@@ -74,7 +73,8 @@ export const FormTextArea = styled.textarea`
 `;
 
 export const FormButton = styled.button`
-  margin-top: 40px;
+  border-radius: 50px;
+  margin-top: 30px;
   width: 140px;
   height: 40px;
   border: none;

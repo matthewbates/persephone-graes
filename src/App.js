@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Loader from "./components/Loader";
@@ -32,10 +28,15 @@ export default function App() {
     setMenuItems(newItems);
   }
 
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 1000);
+  // }, []);
+
   useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
+    const timer1 = setTimeout(() => setIsLoading(false), 3500);
+    return () => clearTimeout(timer1);
   }, []);
 
   return (

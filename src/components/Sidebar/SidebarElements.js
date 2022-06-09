@@ -40,6 +40,7 @@ export const SidebarMenu = styled.ul`
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 70px);
   text-align: center;
+  margin-right: 2rem;
 
   @media screen and (max-width: 480px) {
     grid-template-rows: repate(6, 80px);
@@ -49,9 +50,9 @@ export const SidebarMenu = styled.ul`
 export const SidebarLink = styled(Link)`
   font-family: "Dalliance";
   display: flex;
+  margin-right: 1rem;
   align-items: center;
   justify-content: center;
-  margin-right: 14px;
   font-size: 1.5rem;
   text-decoration: none;
   list-style: none;

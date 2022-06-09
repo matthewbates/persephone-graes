@@ -37,14 +37,14 @@ export default function Navbar({ toggleSidebar }) {
           </NavMenu>
           <SocialIcons>
             <SocialIconLink
-              href="https://facebook.com"
+              href="https://www.facebook.com/Persephone-Graes-Cafe-Juice-Bar-100443859353584"
               target="_blank"
               aria-label="Facebook"
             >
               <FaFacebook />
             </SocialIconLink>
             <SocialIconLink
-              href="https://instagram.com"
+              href="https://www.instagram.com/persephone_graes_cafe/?igshid=YmMyMTA2M2Y="
               target="_blank"
               aria-label="Instagram"
             >

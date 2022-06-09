@@ -1,38 +1,60 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
-  background: #414042;
+  background-color: #f1f2f2;
   height: 100vh;
   display: flex;
   text-align: center;
   flex-direction: column;
-  /* justify-content: center; */
   background-size: cover;
-
-  .about-info {
-    padding: 1rem;
-  }
 
   @media screen and (max-width: 420px) {
     font-size: 0.8rem;
   }
+
+  .card {
+    transform: scale(85%);
+    transition: 1s;
+    padding: 10px;
+    margin-top: 2rem;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 20px 30px,
+      rgba(0, 0, 0, 0.5) 0px 15px 12px;
+
+    @media (max-width: 969px) {
+      padding: 10px;
+    }
+
+    @media (max-width: 700px) {
+      padding: 20px;
+    }
+  }
+`;
+
+export const AboutImage = styled.img`
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  /* @media screen and (max-width: 820px) {
+    margin-left: 30%;
+  }
+
+  @media screen and (max-width: 420px) {
+    margin-left: 2.1rem;
+  } */
 `;
 
 export const AboutText = styled.div`
-  margin-left: 2rem;
-  margin-right: 2rem;
+  color: black;
   /* margin-top: -28rem; */
-  color: #f1f2f1;
   font-family: "Great Vibes";
-  line-height: 50px;
+  line-height: 40px;
 `;
 
-export const AboutA = styled.div`
-  font-family: "Iskoola Pota";
-  color: #f1f2f2;
-`;
-
-export const AboutHours = styled.div`
-  font-family: "Iskoola Pota";
-  text-decoration: none;
+export const AboutBio = styled.div`
+  line-height: 30px;
 `;

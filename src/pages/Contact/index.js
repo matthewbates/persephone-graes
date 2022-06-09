@@ -12,8 +12,29 @@ import emailjs from "emailjs-com";
 import Logo from "../../assets/Text/BarkerHouse.jpg";
 import swal from "sweetalert2";
 
+const SERVICE_ID = "";
+const TEMPLATE_ID = "";
+const USER_ID = "";
 
 export default function Contact() {
+  function handleOnSubmit(e) {
+    e.preventDefault();
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
+      (r) => {
+        console.log(r.text);
+        swal.fire(
+          "Message Sent",
+          "We'll get back to you as soon as possible!",
+          "success"
+        );
+      },
+      (error) => {
+        console.log(error.text);
+        swal.fire("Ooops, something went wrong", error.text, "error");
+      }
+    );
+    e.target.reset();
+  }
   return (
     <ContactContainer>
       <div
@@ -30,11 +51,11 @@ export default function Contact() {
           method="POST"
         >
           <FormLabel htmlFor="name">Full Name</FormLabel>
-          <FormInput name="name" type="text" required />
+          <FormInput name="user_name" type="text" required />
           <FormLabel htmlFor="email">Email</FormLabel>
-          <FormInput name="email" type="email" required />
+          <FormInput name="user_email" type="email" required />
           <FormLabel htmlFor="message">Message</FormLabel>
-          <FormTextArea rows="6" name="message" required></FormTextArea>
+          <FormTextArea rows="6" name="user_message" required></FormTextArea>
           <FormButton type="submit">Send Message</FormButton>
         </Form>
       </div>

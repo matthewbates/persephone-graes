@@ -10,6 +10,7 @@ import Chips from "../assets/Menu/Chips.png";
 import Cobb from "../assets/Menu/Cobb.png";
 import Coffee from "../assets/Menu/Coffee.png";
 import Crawford from "../assets/Menu/Crawford.png";
+import Dressings from "../assets/Menu/Dressings.png";
 import Fajita from "../assets/Menu/Fajita.png";
 import FrenchDip from "../assets/Menu/FrenchDip.png";
 import FrenchToast from "../assets/Menu/FrenchToast.png";
@@ -256,6 +257,14 @@ export const menu = [
     price: "Chicken: 13.00 | Beef: 14.00 | Shrimp**: 15.00",
     img: Fajita,
     desc: "Romaine Lettuce Topped with Sautéed Peppers & Onions, Tomatoes, Black Olives, Avocado, Shredded Cheese & Sour Cream\nAdd an Additional Protien for 4.00",
+  },
+  {
+    id: 34,
+    title: "Dressings",
+    price: "",
+    category: "salads & wraps",
+    // img: Dressings,
+    desc: "Ranch ~ Italian ~ Seasame Ginger ~ Thousand Island ~ Balsamic Viniagrette ~ Caesar",
   },
   {
     id: 29,
